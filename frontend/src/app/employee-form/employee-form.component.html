@@ -1,0 +1,47 @@
+<h2>{{ employee ? 'Edit' : 'Add' }} Employee</h2>
+<form (ngSubmit)="submitForm()" #employeeForm="ngForm">
+  <label for="first_name">First Name:</label>
+  <input
+    type="text"
+    id="first_name"
+    name="first_name"
+    [(ngModel)]="formEmployee.first_name"
+    required
+  />
+  <label for="last_name">Last Name:</label>
+  <input
+    type="text"
+    id="last_name"
+    name="last_name"
+    [(ngModel)]="formEmployee.last_name"
+    required
+  />
+  <label for="email">Email:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    [(ngModel)]="formEmployee.email"
+    required
+  />
+  <label for="gender">Gender:</label>
+  <input
+    type="text"
+    id="gender"
+    name="gender"
+    [(ngModel)]="formEmployee.gender"
+    required
+  />
+  <label for="salary">Salary:</label>
+  <input
+    type="text"
+    id="salary"
+    name="salary"
+    [(ngModel)]="formEmployee.salary"
+    required
+  />
+  <button type="submit">Save</button>
+  <button type="button" (click)="cancelForm()">Cancel</button>
+</form>
+
+   

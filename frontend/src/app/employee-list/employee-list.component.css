@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 400vh;
+   
+ 
+  
+}
+
+h2 {
+  text-align: center;
+  border: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 70%;
+  background-color: #75c4b0;
+  box-shadow: 0 0 0 3px #ddd;
+  animation: border-color 3s linear infinite;
+  padding-bottom: 10px;;
+  margin-bottom: 100px;
+}
+
+@keyframes border-color {
+  from {
+    box-shadow: 0 0 0 3px #ddd;
+  }
+  to {
+    box-shadow: 0 0 0 20px #75c4b0;
+  }
+}
+
+.table-responsive {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: auto;
+  box-shadow: none;
+}
+
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f8d7da;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  
+background-image: linear-gradient(to right, #33001b, #ff0084); 
+ 
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0056b3;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #c82333;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.btn-details {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-details:hover, .btn-details:focus {
+  background-color: #218838;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+}
+
+.app-employee-form {
+  margin-top: 20px;
+}
+
+.btn-add-employee {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+
+.btn-add-employee:hover, .btn-add-employee:focus {
+  background-color: #0056b3;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
